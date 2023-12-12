@@ -1,0 +1,66 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+
+    <Compile Remove="Data\**" />
+    <EmbeddedResource Remove="Data\**" />
+    <None Remove="Data\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+<<<<<<< HEAD
+    <Compile Include="Data\Migrations\20211130152131_Test1.cs" />
+    <Compile Include="Data\Migrations\20211130152131_Test1.Designer.cs" />
+=======
+    <Compile Include="Data\Migrations\20211125092153_client.cs" />
+    <Compile Include="Data\Migrations\20211125092153_client.Designer.cs" />
+    <Compile Include="Data\Migrations\20211125174018_Aman.cs" />
+    <Compile Include="Data\Migrations\20211125174018_Aman.Designer.cs" />
+    <Compile Include="Data\Migrations\20211126173548_initial.cs" />
+    <Compile Include="Data\Migrations\20211126173548_initial.Designer.cs" />
+>>>>>>> a8cf8b3882a70676418776b0114a384bb3be297f
+    <Compile Include="Data\Migrations\EPPContextModelSnapshot.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+
+
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.11">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="5.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.11">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="5.0.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Excellerent.ApplicantTracking.Domain\Excellerent.ApplicantTracking.Domain.csproj" />
+    <ProjectReference Include="..\Excellerent.ClientManagement.Domain\Excellerent.ClientManagement.Domain.csproj" />
+
+    <ProjectReference Include="..\Excellerent.ProjectManagement.Domain\Excellerent.ProjectManagement.Domain.csproj" />
+
+    <ProjectReference Include="..\Excellerent.ResourceManagement.Domain\Excellerent.ResourceManagement.Domain.csproj" />
+
+    <ProjectReference Include="..\Excellerent.SharedModules\Excellerent.SharedModules.csproj" />
+    <ProjectReference Include="..\Excellerent.Timesheet.Domain\Excellerent.Timesheet.Domain.csproj" />
+    <ProjectReference Include="..\Excellerent.Usermanagement.Domain\Excellerent.Usermanagement.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+<<<<<<< HEAD
+=======
+
+>>>>>>> a8cf8b3882a70676418776b0114a384bb3be297f
+    <Folder Include="SharedFiles\" />
+  </ItemGroup>
+
+</Project>
